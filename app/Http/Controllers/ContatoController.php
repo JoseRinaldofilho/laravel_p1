@@ -8,7 +8,6 @@ class ContatoController extends Controller
 {
     public function index()
     {
-        echo "Olá mundo! Contato";
-        // return view('principal');
+        return view('/pages/contato.index');
     }
 }

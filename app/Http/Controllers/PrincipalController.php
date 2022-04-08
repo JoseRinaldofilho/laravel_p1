@@ -8,7 +8,6 @@ class PrincipalController extends Controller
 {
     public function index()
     {
-        echo "Olá mundo! principal";
-        // return view('principal');
+        return view('/pages/principal/index');
     }
 }

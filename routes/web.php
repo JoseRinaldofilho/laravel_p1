@@ -13,12 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+// roda sobre nos
 Route::get('sobrenos', [\App\Http\Controllers\SobreNosController::class, 'index']);
-
+// rota contato
 Route::get('contato',[\App\Http\Controllers\ContatoController::class,'index']);
-
-Route::get('principal', [\App\Http\Controllers\PrincipalController::class, 'index']);
+// rota tela principal
+Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'index']);
